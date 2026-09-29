@@ -1,0 +1,508 @@
+/* =====================================================
+   JOBNEST DASHBOARD
+   BLUE - CLEAN & PROFESSIONAL THEME
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body {
+    background: #F4F8FF;
+    color: #172033;
+    min-height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100vh;
+    background: #FFFFFF;
+    border-right: 1px solid #DCE7F7;
+    padding: 25px 15px;
+    box-shadow: 2px 0 10px rgba(31, 78, 121, 0.05);
+}
+
+/* ================= LOGO ================= */
+
+.logo-area {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo-area h2 {
+    font-size: 25px;
+    color: #172033;
+}
+
+.logo-area h2 span {
+    color: #2563EB;
+}
+
+/* ================= SIDEBAR NAVIGATION ================= */
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px 15px;
+    color: #64748B;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.sidebar nav a:hover {
+    background: #EEF5FF;
+    color: #2563EB;
+}
+
+.sidebar nav a.active {
+    background: #2563EB;
+    color: #FFFFFF;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+    margin-left: 230px;
+    min-height: 100vh;
+    padding: 25px 35px;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.top-bar h1 {
+    font-size: 28px;
+    color: #172033;
+}
+
+.top-bar p {
+    margin-top: 5px;
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* ================= USER AREA ================= */
+
+.user-area {
+    position: relative;
+}
+
+/* ================= PROFILE CIRCLE ================= */
+
+.profile-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2563EB;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+/* ================= USER DETAILS BOX ================= */
+
+.user-box {
+    display: none;
+    position: fixed;
+    top: 85px;
+    left: 270px;
+    width: 280px;
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    color: #172033;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(31, 78, 121, 0.15);
+    z-index: 9999;
+}
+
+/* ================= USER HEADER ================= */
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #E5EDF8;
+    padding-bottom: 10px;
+}
+
+.user-header h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #172033;
+}
+
+/* ================= CLOSE BUTTON ================= */
+
+.user-close {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    color: #64748B;
+    line-height: 1;
+}
+
+.user-close:hover {
+    color: #2563EB;
+}
+
+/* ================= USER DETAILS ================= */
+
+.user-details p {
+    margin: 10px 0;
+    font-size: 13.5px;
+    color: #64748B;
+}
+
+.user-details strong {
+    color: #172033;
+    font-weight: 600;
+}
+
+/* ================= EDIT BUTTON ================= */
+
+.edit-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2563EB;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    margin-top: 14px;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.edit-btn:hover {
+    background: #1D4ED8;
+}
+
+/* ================= WELCOME SECTION ================= */
+
+.welcome-section {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(31, 78, 121, 0.04);
+}
+
+.welcome-section h2 {
+    font-size: 22px;
+    color: #172033;
+    margin-bottom: 8px;
+}
+
+.welcome-section h2 span {
+    color: #2563EB;
+}
+
+.welcome-section p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* ================= SUMMARY SECTION ================= */
+
+.summary-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+/* ================= SUMMARY CARD ================= */
+
+.summary-card {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s ease;
+}
+
+.summary-card:hover {
+    border-color: #8DB7F5;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.08);
+}
+
+/* ================= CARD ICON ================= */
+
+.card-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EAF2FF;
+    color: #2563EB;
+    border-radius: 10px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* ================= CARD TEXT ================= */
+
+.summary-card h3 {
+    font-size: 13px;
+    color: #64748B;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.summary-card h2 {
+    font-size: 24px;
+    color: #172033;
+}
+
+.summary-card p {
+    font-size: 11px;
+    color: #94A3B8;
+    margin-top: 3px;
+}
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 20px;
+    color: #172033;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    color: #64748B;
+}
+
+/* ================= AI SECTION ================= */
+
+.ai-section {
+    margin-bottom: 30px;
+}
+
+/* ================= RECOMMENDED JOB ================= */
+
+.recommended-job {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: 0.2s ease;
+}
+
+.recommended-job:hover {
+    border-color: #8DB7F5;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.07);
+}
+
+.recommended-job h3 {
+    font-size: 16px;
+    color: #172033;
+    margin-bottom: 6px;
+}
+
+.recommended-job p {
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 12px;
+}
+
+.recommended-job span {
+    display: block;
+    font-size: 12px;
+    color: #2563EB;
+}
+
+/* ================= VIEW JOB BUTTON ================= */
+
+.recommended-job a {
+    flex-shrink: 0;
+    padding: 10px 22px;
+    background: #2563EB;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.recommended-job a:hover {
+    background: #1D4ED8;
+}
+
+/* ================= APPLY BUTTON ================= */
+
+.apply-btn {
+    flex-shrink: 0;
+    padding: 10px 22px;
+    background: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.apply-btn:hover {
+    background: #1D4ED8;
+}
+
+/* ================= RECENT ACTIVITY ================= */
+
+.activity-section {
+    margin-bottom: 30px;
+}
+
+.activity-box {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 15px;
+    padding: 25px;
+    color: #64748B;
+    font-size: 13px;
+    box-shadow: 0 3px 12px rgba(31, 78, 121, 0.04);
+}
+
+/* ================= WELCOME TEXT ================= */
+
+.welcome h1 span {
+    color: #2563EB;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .summary-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .summary-section {
+        grid-template-columns: 1fr;
+    }
+
+    .recommended-job {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .recommended-job a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-box {
+        left: auto;
+        right: 20px;
+        top: 75px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 500px) {
+
+    .sidebar {
+        width: 70px;
+        padding: 20px 10px;
+    }
+
+    .logo-area h2 {
+        font-size: 0;
+    }
+
+    .logo-area h2 span {
+        font-size: 18px;
+    }
+
+    .sidebar nav a {
+        justify-content: center;
+    }
+
+    .sidebar nav a span {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 70px;
+        padding: 15px;
+    }
+
+    .top-bar h1 {
+        font-size: 22px;
+    }
+}

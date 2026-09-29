@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body {
+    background: #F4F8FF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ================= LOGO ================= */
+
+.logo {
+    color: #172033;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.logo strong {
+    color: #2563EB;
+    font-weight: 700;
+}
+
+/* ================= REGISTER BOX ================= */
+
+.box {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 16px;
+    padding: 36px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
+}
+
+.box h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #172033;
+    margin-bottom: 24px;
+}
+
+/* ================= FORM ================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 6px;
+}
+
+/* ================= INPUT & SELECT ================= */
+
+input,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DCE7F7;
+    border-radius: 10px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #172033;
+    outline: none;
+    margin-bottom: 16px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    appearance: none;
+}
+
+input::placeholder {
+    color: #94A3B8;
+}
+
+input:focus,
+select:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================= INVALID INPUT ================= */
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #EF4444;
+}
+
+/* ================= SELECT ================= */
+
+select {
+    cursor: pointer;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2364748B'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+
+    padding-right: 38px;
+}
+
+select option {
+    background: #FFFFFF;
+    color: #172033;
+}
+
+/* ================= REGISTER BUTTON ================= */
+
+.btn {
+    width: 100%;
+    padding: 13px;
+    background: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+    background: #1D4ED8;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* ================= LOGIN LINK ================= */
+
+.login {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13.5px;
+    color: #64748B;
+}
+
+.login a {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 460px) {
+
+    .box {
+        padding: 28px 24px;
+    }
+}

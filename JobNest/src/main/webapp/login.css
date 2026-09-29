@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body {
+    background: #F4F8FF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ================= AUTH CONTAINER ================= */
+
+.auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= AUTH BOX ================= */
+
+.auth-box {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 16px;
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
+}
+
+/* ================= LOGO ================= */
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-logo h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #172033;
+}
+
+.auth-logo h1 span {
+    color: #2563EB;
+}
+
+.auth-logo p {
+    font-size: 13.5px;
+    color: #64748B;
+    margin-top: 6px;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DCE7F7;
+    border-radius: 10px;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #172033;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #94A3B8;
+}
+
+.form-group input:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================= FORGOT PASSWORD ================= */
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 22px;
+}
+
+.forgot-password a {
+    font-size: 12.5px;
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* ================= AUTH BUTTON ================= */
+
+.auth-btn {
+    width: 100%;
+    padding: 13px;
+    background: #2563EB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.auth-btn:hover {
+    background: #1D4ED8;
+}
+
+.auth-btn:active {
+    transform: scale(0.98);
+}
+
+/* ================= FOOTER ================= */
+
+.auth-footer {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13.5px;
+    color: #64748B;
+}
+
+.auth-footer a {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 460px) {
+
+    .auth-box {
+        padding: 32px 24px;
+    }
+}

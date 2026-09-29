@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body {
+    background: #F4F8FF;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #172033;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #172033;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #2563EB;
+    font-weight: 700;
+}
+
+.back-btn {
+    color: #2563EB;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.heading {
+    margin-bottom: 22px;
+}
+
+.heading h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #172033;
+    margin-bottom: 7px;
+}
+
+.heading p {
+    font-size: 14px;
+    color: #64748B;
+}
+
+/* ================= JOB BOX ================= */
+
+.job-card {
+    background: #FFFFFF;
+    border: 1px solid #DCE7F7;
+    border-radius: 16px;
+    padding: 36px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
+}
+
+/* ================= FORM ================= */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748B;
+    margin-bottom: 6px;
+}
+
+/* ================= INPUT & SELECT ================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #DCE7F7;
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    font-size: 14px;
+    color: #172033;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+input,
+select {
+    height: 45px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94A3B8;
+}
+
+/* ================= FOCUS ================= */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563EB;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ================= SELECT ================= */
+
+select {
+    cursor: pointer;
+}
+
+/* ================= POST JOB BUTTON ================= */
+
+.post-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #16A34A;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 6px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease;
+}
+
+.post-btn:hover {
+    background: #15803D;
+}
+
+.post-btn:active {
+    transform: scale(0.98);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .job-card {
+        padding: 28px 24px;
+    }
+
+    .navbar {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    .job-card {
+        padding: 24px 20px;
+    }
+
+    .heading h1 {
+        font-size: 23px;
+    }
+
+}
